@@ -23,7 +23,7 @@ class Layer:
     def backward(self, outTensors: Tensor, inTensors: Tensor):
         pass
     @abc.abstractmethod
-    def calculateDeltaWeights(self, outTensors: Tensor, inTensors: Tensor)):
+    def calculateDeltaWeights(self, outTensors: Tensor, inTensors: Tensor):
         pass
 
 class FullyConnectedLayer(Layer):
